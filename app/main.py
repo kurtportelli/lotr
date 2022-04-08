@@ -16,4 +16,4 @@ def fetch_items(item):
 @app.get("/fetch_data")
 def fetch_data_from_source_api():
     items = ["book", "movie", "character", "quote", "chapter"]
-    return {f"{item}s_data": fetch_items(item) for item in items}
+    books_data, movies_data, characters_data, quotes_data, chapters_data = [fetch_items(item) for item in items]

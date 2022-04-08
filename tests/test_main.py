@@ -1,4 +1,4 @@
-from main import fetch_items
+from app.main import fetch_items
 
 
 def test_fetch_items():
