@@ -68,7 +68,7 @@ class Chapter(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     ext_id = Column(String, unique=True, index=True)
-    chapter_name = Column(String, unique=True, index=True)
+    name = Column(String, unique=True, index=True)
     book_id = Column(Integer, ForeignKey("books.id"))
 
     book = relationship("Book", back_populates="chapters")

@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class ChapterBase(BaseModel):
     ext_id: str
-    chapter_name: str
+    name: str
 
 
 class ChapterCreate(ChapterBase):
