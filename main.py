@@ -9,7 +9,7 @@ access_token = os.getenv("ACCESS_TOKEN")
 
 
 def fetch_items(item):
-    url = os.path.join(source_api_base_path, item)
+    url = os.path.join(source_api_base_path, item, "?limit=10000")
     response = requests.get(url, headers={"Authorization": f"Bearer {access_token}"})
     return response.json()
 
