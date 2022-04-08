@@ -8,7 +8,7 @@ effectively calling the `fetch_data_from_source_api()` function.
 In the future, this data will be polled routinely via a cronjob.
 
 ### TODO
-- [.] Make database models
+- [x] Make database models
 - [ ] Deserialize fetched data as a model
 - [ ] Save fetched data into db
 - [ ] Expose data on my own API
